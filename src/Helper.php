@@ -20,7 +20,7 @@ class Helper
      * Factory constructor.
      *
      * @param Filesystem $filesystem
-     * @param $app
+     * @param \Illuminate\Contracts\Foundation\Application $app
      */
     public function __construct(Filesystem $filesystem, $app)
     {
@@ -33,7 +33,7 @@ class Helper
      *
      * @param $html
      *
-     * @return array
+     * @return string[]
      */
     public function extractText($html)
     {
@@ -64,7 +64,7 @@ class Helper
      *
      * @param array $paths
      *
-     * @return mixed
+     * @return string[]
      */
     public function getViews($paths = [])
     {
