@@ -47,7 +47,6 @@ class GetMissingTransCommand extends Command
     {
         // get all views from the current file
         // $this->factory->getViews($path);
-        echo $this->ask("do you want to get missing string in the file");
+        echo $this->ask('do you want to get missing string in the file');
     }
-
 }
